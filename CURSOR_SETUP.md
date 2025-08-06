@@ -30,10 +30,7 @@ python weather.py --port 8123
 {
   "mcpServers": {
     "weather-server": {
-      "transport": {
-        "type": "streamable-http",
         "url": "http://localhost:8123/mcp"
-      }
     }
   }
 }
