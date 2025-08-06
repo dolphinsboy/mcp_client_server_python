@@ -1,3 +1,6 @@
+# 引用
+[https://github.com/invariantlabs-ai/mcp-streamable-http](https://github.com/invariantlabs-ai/mcp-streamable-http) 基于这个改成基于Openai的模式
+
 # MCP Client Server Python
 
 这是一个基于 MCP (Model Context Protocol) 的客户端-服务器项目，使用 Python 实现。项目包含一个天气服务服务器和一个支持 OpenAI 兼容 API 的客户端。
