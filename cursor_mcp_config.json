@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "weather-server": {
+      "command": "python",
+      "args": ["weather.py", "--port", "8123"],
+      "cwd": "./server",
+      "env": {},
+      "transport": {
+        "type": "stdio"
+      }
+    },
+    "weather-http-server": {
+      "transport": {
+        "type": "http",
+        "url": "http://localhost:8123/mcp"
+      }
+    }
+  }
+} 
