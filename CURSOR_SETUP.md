@@ -155,6 +155,9 @@ python weather.py --port 8123 --host 0.0.0.0
 [使用 get_alerts 工具获取德克萨斯州的天气警报]
 ```
 
+<img width="1686" height="694" alt="image" src="https://github.com/user-attachments/assets/ab528fb4-8d28-4857-b7bf-eeee1637bee8" />
+
+
 ## 注意事项
 
 1. **安全性**: 当前配置仅适用于本地开发，生产环境需要适当的安全措施
