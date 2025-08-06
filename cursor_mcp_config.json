@@ -10,10 +10,7 @@
       }
     },
     "weather-http-server": {
-      "transport": {
-        "type": "streamable-http",
-        "url": "http://localhost:8123/mcp"
-      }
+      "url": "http://localhost:8123/mcp"
     }
   }
 } 
