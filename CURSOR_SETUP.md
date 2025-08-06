@@ -31,7 +31,7 @@ python weather.py --port 8123
   "mcpServers": {
     "weather-server": {
       "transport": {
-        "type": "http",
+        "type": "sse",
         "url": "http://localhost:8123/mcp"
       }
     }
@@ -113,7 +113,7 @@ python weather.py --port 8124
 ```json
 {
   "transport": {
-    "type": "http",
+    "type": "sse",
     "url": "http://localhost:8124/mcp"
   }
 }
@@ -130,7 +130,7 @@ python weather.py --port 8123 --host 0.0.0.0
 ```json
 {
   "transport": {
-    "type": "http",
+    "type": "sse",
     "url": "http://YOUR_SERVER_IP:8123/mcp"
   }
 }
