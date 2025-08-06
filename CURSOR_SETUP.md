@@ -31,7 +31,7 @@ python weather.py --port 8123
   "mcpServers": {
     "weather-server": {
       "transport": {
-        "type": "sse",
+        "type": "streamable-http",
         "url": "http://localhost:8123/mcp"
       }
     }
@@ -100,6 +100,12 @@ python weather.py --port 8123
 - 查看 Cursor 的开发者工具中的错误信息
 - 确认服务器日志中是否有错误
 
+### 4. 配置错误
+如果看到 "Server must have either a command (for stdio) or url (for SSE)" 错误：
+- 确保使用 `"type": "streamable-http"` 而不是 `"sse"` 或 `"http"`
+- 重启 Cursor 以重新加载配置
+- 检查服务器是否在运行：`curl http://localhost:8123/mcp/`
+
 ## 高级配置
 
 ### 自定义端口
@@ -113,7 +119,7 @@ python weather.py --port 8124
 ```json
 {
   "transport": {
-    "type": "sse",
+    "type": "streamable-http",
     "url": "http://localhost:8124/mcp"
   }
 }
@@ -130,7 +136,7 @@ python weather.py --port 8123 --host 0.0.0.0
 ```json
 {
   "transport": {
-    "type": "sse",
+    "type": "streamable-http",
     "url": "http://YOUR_SERVER_IP:8123/mcp"
   }
 }
