@@ -133,6 +133,11 @@ Query: Are there any weather alerts in California?
 - 本地模型: `http://localhost:11434/v1`
 - 其他兼容端点
 
+
+### dify MCP
+<img width="2776" height="1184" alt="image" src="https://github.com/user-attachments/assets/579317ed-dfb6-4790-aa5f-c260bedf9e64" />
+
+
 ## 许可证
 
 MIT License
