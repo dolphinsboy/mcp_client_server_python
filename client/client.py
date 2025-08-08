@@ -101,9 +101,11 @@ class MCPClient:
             }
             for tool in response.tools
         ]
+        print(available_tools)
 
         # Initial OpenAI API call
         response_data = await self.call_openai_api(messages, available_tools)
+        print(response_data)
 
         # Process response and handle tool calls
         final_text = []

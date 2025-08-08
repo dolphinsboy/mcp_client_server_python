@@ -1,0 +1,17 @@
+# Weather MCP Server Dependencies
+# Compatible versions to avoid anyio conflicts
+
+# Core MCP dependencies
+mcp>=1.9.0
+
+# HTTP client for weather API
+httpx>=0.28.0,<0.29.0
+
+# Web framework for authentication
+fastapi>=0.115.0
+
+# ASGI server
+uvicorn>=0.27.0
+
+# Optional: for environment variable loading
+python-dotenv>=1.0.0

@@ -1,12 +1,13 @@
 [project]
 name = "mcp-streamable-http-server"
 version = "0.1.0"
-description = "HTTP Streamable based example MCP Server"
+description = "HTTP Streamable based example MCP Server with Dify MCP authorization support"
 requires-python = ">=3.12"
 dependencies = [
-    "httpx~=0.28.0",
-    "mcp~=1.9.0",
-    "uvicorn~=0.27.0",
+    "httpx>=0.28.0,<0.29.0",
+    "mcp>=1.9.0",
+    "uvicorn>=0.27.0",
+    "fastapi>=0.115.0",
 ]
 
 [build-system]
